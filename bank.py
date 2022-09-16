@@ -6,7 +6,7 @@ from unicodedata import name
 #create a class called BankAccount
 class BankAccount :
 
-   account_number = 103510671121
+   account_number = 0
    owner = ""
    balance = 0
    type = ""
@@ -21,10 +21,12 @@ class BankAccount :
 
 #Create a class called Bank
 class Bank : 
-    def deposit(self):
+   accounts = 1035101067
+   def deposit(self):
         amount=float(input("Enter amount to be Deposited: "))
+        self.accounts= int(input ('Enter the account no : '))
         self.balance += amount
-        print("\n Amount Deposited:",amount)
+        print("\n\n Amount Deposited:",amount,)
    
 
 
